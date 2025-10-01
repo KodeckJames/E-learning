@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Learning Prototype</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Mini E-Learning Platform</h1>
+  </header>
+
+  <!-- Login / Sign Up -->
+  <section id="auth-section">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Enter username"/>
+    <button onclick="login()">Login</button>
+  </section>
+
+  <!-- Main Content -->
+  <main id="main-content" class="hidden">
+    <h2>Available Courses</h2>
+    <ul id="course-list"></ul>
+
+    <div id="course-details" class="hidden">
+      <h3 id="course-title"></h3>
+      <p id="course-description"></p>
+      <button id="complete-btn" onclick="markCompleted()">Mark as Completed</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
